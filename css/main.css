@@ -11,7 +11,7 @@ html {
 }
 
 h2 {
-  color: #05273a;
+  color: #C3D2FF;
 }
 
 a, a:hover, a:active, a:visited, a:focus {
@@ -29,9 +29,9 @@ header {
   width: 100%;
   margin-right: 0;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, #f48668, #f4a698, #d9e5d6, #eddea4, #0fa3b1);
+  background-image: url("https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: cover;
-  color: #05273a;
+  color: #cfdafc;
   position: relative;
 }
 
@@ -42,7 +42,7 @@ header {
   bottom: 1em;
   left: calc((100% - 91px)/2);
   text-decoration: none;
-  color: #05273a;
+  color: #F7F6DA;
 }
 
 .fa-magic {
@@ -62,7 +62,8 @@ header {
 }
 
 .name > h1 {
-  margin-bottom: 0;
+  margin-bottom: 1.5em;
+  color: #cfdafc;
 }
 
 .name > p {
@@ -71,11 +72,11 @@ header {
 
 nav {
   display: flex;
-  background-color: #0fa3b1;
+  background-color: #e6dcc3;
 }
 
 .nav-item {
-  color: #efdfd9;
+  color: #1d1b40;
   padding: 5px;
   width: 100px;
   display: inline-block;
@@ -87,7 +88,8 @@ nav {
 /* Body */
 .content {
   padding: 0.7em;
-  background-color: #d9e5d6;
+  background-color: #1D1B40;
+  color: #cfdafc;
 }
 
 .coding {
@@ -97,7 +99,7 @@ nav {
 }
 
 .content > h2 {
-  color: #05273a;
+  color: #C3D2FF;
 }
 
 .about-me {
@@ -115,10 +117,14 @@ h3 {
   font-size: 1.2em;
 }
 
+h4 {
+  font-size: 1em;
+}
+
 .featured-works {
   margin: 15px auto;
   padding: 5px;
-  background-color: white;
+  background-color: #1d1b40;
 }
 
 .works {
@@ -130,6 +136,10 @@ h3 {
   margin: 10px auto;
   width: 250px;
   box-shadow: 9px 2px 23px 1px rgba(0,0,0,0.56);
+}
+
+.see-project {
+  color: #e6dcc3;
 }
 
 #contacts-large {
@@ -146,6 +156,7 @@ h3 {
   font-size: 1.5em;
   padding: 15px;
   margin: 0 auto;
+  color: #413a41;
 }
 
 @media screen and (max-width: 330px) {
