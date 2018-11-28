@@ -14,10 +14,6 @@ h2 {
   color: #C3D2FF;
 }
 
-a, a:hover, a:active, a:visited, a:focus {
-    text-decoration:none;
-}
-
 
 
 /* header */
@@ -45,11 +41,6 @@ header {
   color: #F7F6DA;
 }
 
-.fa-magic {
-  font-size: 2em;
-  margin: 1em;
-  display: inline-block;
-}
 
 .name {
   width: auto;
@@ -62,16 +53,17 @@ header {
 }
 
 .name > h1 {
-  margin-bottom: 1.5em;
   color: #cfdafc;
 }
 
 .name > p {
-  margin-top: 0;
+  margin-bottom: 0;
 }
 
-nav {
+#nav {
   display: flex;
+  justify-content: space-around;
+  padding: 0.2em;
   background-color: #e6dcc3;
 }
 
@@ -102,36 +94,38 @@ nav {
   color: #C3D2FF;
 }
 
-.about-me {
-  margin: 0 auto 15px auto;
-  padding: 5px;
-  background-color: white;
-  border: 0;
-}
-
-figure {
-  padding: 10px;
-}
-
 h3 {
   font-size: 1.2em;
+  font-weight: bold;
+}
+
+#education .degree {
+  font-weight: bold;
 }
 
 h4 {
   font-size: 1em;
+  font-weight: bold;
+}
+
+.year {
+  font-weight: bold;
 }
 
 #detail {
   display: none;
 }
 
-#econ:hover #detail {
+/* #econ:hover #detail {
+  display: block;
+} */
+
+#econ:hover #detail, detail.econ-hover {
   display: block;
 }
 
 .featured-works {
-  margin: 15px auto;
-  padding: 5px;
+  /* margin: auto; */
   background-color: #1d1b40;
 }
 
@@ -148,10 +142,34 @@ h4 {
 
 .see-project {
   color: #e6dcc3;
+  text-decoration: underline;
 }
 
 #contacts-large {
   display: none;
+}
+
+#content hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #e6dcc3;
+}
+
+main section {
+  border-bottom: 2px double #f7f6da;
+  margin: 15px auto;
+}
+
+#featured-works img {
+  width: 200px;
+  max-height: 200px;
+  box-shadow: 3px 3px 5px 0px rgba(218,220,232,0.69);
+  display: block;
+  margin: 5px auto;
+}
+
+#featured-works p {
+  text-align: justify;
 }
 
 /* Footer */
@@ -175,17 +193,40 @@ h4 {
   display: block;
 }
 
-@media screen and (max-width: 330px) {
-  .coding,
-  .works-img {
-    width: 200px;
+@media screen and (max-width: 400px) {
+  h1 {
+    margin-bottom: 0.5em;
   }
+
+  .name p {
+    font-size: 0.9em;
+  }
+
+  #content {
+    font-size: 0.9em;
+  }
+
+  .nav-item {
+    width: 80px;
+  }
+
 }
 
 
 
 @media screen and (max-width: 599px) {
-  .content {
+
+  h1 {
+    margin-bottom: 1em;
+    margin-top: 10px;
+  }
+
+  .name p {
+    font-size: 1em;
+  }
+
+  #content {
+    font-size: 0.9em;
     padding: 2em;
   }
 
@@ -199,72 +240,98 @@ h4 {
 }
 
 @media screen and (min-width: 600px) {
-  .coding {
-    width: 400px;
-  }
 
-  .header-container {
-    padding: 2.5em;
-    height: 150px;
-  }
-
-  .find-more {
-    display: none;
-  }
-
-  .content {
+  #content {
     padding: 3em;
   }
 
-  .about-me {
-    padding: 10px;
+  .name {
+    margin: 1.5em;
   }
 
-  .featured-works {
-    padding: 10px;
+  .name p {
+    font-size: 1em;
+    margin-top: 1em;
+  }
+
+  .header-container {
+    padding: 20px;
   }
 
 }
 
 @media screen and (min-width: 770px) {
-  hr {
+  #featured-works hr {
     display: none;
   }
 
-  .works-container {
+  #featured-works {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
-  .works-img {
-    width: 280px;
+  #featured-works h2 {
+    width: 100%;
   }
 
-  .works {
+  #featured-works .works-container {
+    width: 300px;
+    margin: 10px;
     padding: 5px;
-  }
-
-  .works:nth-child(-n+3) {
-    width: 50%;
-    border-bottom: 1px solid #d9e5d6;
-  }
-
-  .works:nth-child(1) {
-    border-right: 1px solid #d9e5d6;
+    box-shadow: 1px 1px 5px 1px rgba(218,220,232,0.69);
   }
 
 }
 
 @media screen and (min-width: 940px) {
   .content-item {
-    width: 800px;
+    width: 1000px;
+  }
+
+  .work-container {
+    width: 300px;
+    padding: 20px;
   }
 }
+
+@media only screen {
+  #detail {
+    display: block;
+  }
+
+  .show-contact {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #contacts a {
+    width: 100%;
+  }
+}
+
+
 
 a {
   transition: 0.2s;
 }
 
-a:hover {
+address a:hover {
   text-shadow: 0px 0px 23px yellow;
+}
+
+#nav a:hover {
+  text-shadow: 0px 0px 23px #c3d2ff;
+}
+
+.header-container a:hover,
+#featured-works a:hover {
+  text-shadow: 0px 0px 23px #c3d2ff;
+  color: white;
 }

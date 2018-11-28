@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CRoboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/index.js" charset="utf-8"></script>
     <title>My Portfolio</title>
   </head>
   <body>
@@ -32,7 +34,7 @@
       <section class="education content-item" id="education">
         <h2>Education</h2>
         <article class="edu" id="econ">
-          <h3>Bachelor of Economics | The Faculty of Economics Chulalongkorn University</h3>
+          <h3><span class="degree">Bachelor of Economics</span> | The Faculty of Economics Chulalongkorn University</h3>
           <p>JULY 2014 – JULY 2018</p>
           <p>GPAX: 3.77</p>
           <div id="detail">
@@ -51,11 +53,11 @@
           </div>
         </article>
         <article class="edu">
-          <h3>Front-End Web Developer Nanodegree | Udacity</h3>
+          <h3><span class="degree">Front-End Web Developer Nanodegree</span> | Udacity</h3>
           <p>SEP 2018 - PRESENT</p>
         </article>
       </section>
-      <section id="skills">
+      <section id="skills" class="content-item">
         <h2>Skills</h2>
         <ul>
           <li>HTML5, HTML</li>
@@ -71,55 +73,54 @@
         <article class="works-container">
           <h3 class="work">Memory Game</h3>
           <p>I use javascript to make simple memory card game.</p>
-          <img src="https://i.ibb.co/vJ888Kg/Memory-game.jpg" alt="Memory-game" border="0">
+          <img src="https://i.ibb.co/vJ888Kg/Memory-game.jpg" alt="Memory-game" border="0"><br>
           <a href="https://github.com/W-Sarakul/memory-game-project" target="_blank" class="see-project">See Project</a>
-        </article>
+        </article><hr>
         <article class="works-container">
           <h3 class="work">Feed Reader Testing</h3>
           <p>I use Jasmine to test the functionality of the page.</p>
-          <img src="https://images.pexels.com/photos/459793/pexels-photo-459793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350" border="0">
+          <img src="https://images.pexels.com/photos/459793/pexels-photo-459793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350" border="0"><br>
           <a href="https://github.com/W-Sarakul/frontend-nanodegree-feedreader" target="_blank" class="see-project">See Project</a>
-        </article>
+        </article><hr>
         <article class="works-container">
           <h3 class="work">Arcade Game Clone</h3>
           <p>This project use HTML canvas and Object-Oriented JavaScript to make an arcade game from stater code.</p>
-          <img src="https://i.ibb.co/DLFWMXP/Arcade-game.jpg" alt="Arcade-game" border="0">
+          <img src="https://i.ibb.co/DLFWMXP/Arcade-game.jpg" alt="Arcade-game" border="0"><br>
           <a href="https://github.com/W-Sarakul/frontend-nanodegree-arcade-game" target="_blank" class="see-project">See Project</a>
-        </article>
+        </article><hr>
         <article class="works-container">
           <h3 class="work">Random Quote Machine</h3>
           <p>This is my first React Application. It will random the quote and background image every time you click "New-Quote" button.</p>
           <p>You can try it in my <a href="https://codepen.io/so4more/full/rZZjKd/">CodePen</a>, but because of the bug, it cannot be open directly from .html file in browser.</p>
-          <img src="https://i.ibb.co/9H98HKQ/Random-quote-machine.jpg" alt="Random-quote-machine" border="0">
+          <img src="https://i.ibb.co/9H98HKQ/Random-quote-machine.jpg" alt="Random-quote-machine" border="0"><br>
           <a href="https://github.com/W-Sarakul/random-quote-machine" target="_blank" class="see-project">See Project</a>
-        </article>
+        </article><hr>
         <article class="works-container">
           <h3 class="work">Mobile Web Specialist Restaurant Reviews App</h3>
           <p>In this project, I got starter code that has its functionality, but lack accessibility for keyboard-only user or screen reader user. In addition, the component does not fit well with the screen. I add some function to fix the accessibility problems and fix styling in CSS to make it with well with every devices screen size.</p>
-          <img src="https://i.ibb.co/7kjSKCp/Restaurant-review-app.jpg" alt="Restaurant-review-app" border="0">
+          <img src="https://i.ibb.co/7kjSKCp/Restaurant-review-app.jpg" alt="Restaurant-review-app" border="0"><br>
           <a href="https://github.com/W-Sarakul/mws-restaurant-stage-1" target="_blank" class="see-project">See Project</a>
-        </article>
+        </article><hr>
         <article class="works-container">
           <h3 class="work">Portfolio Page</h3>
           <p>This is my first responsive single-page website project using HTML, CSS, responsive design, and responsive image.</p>
-          <img src="https://i.ibb.co/7kjSKCp/Restaurant-review-app.jpg" alt="Restaurant-review-app" border="0">
+          <img src="https://i.ibb.co/7kjSKCp/Restaurant-review-app.jpg" alt="Restaurant-review-app" border="0"><br>
           <a href="https://github.com/W-Sarakul/mws-restaurant-stage-1" target="_blank" class="see-project">See Project</a>
-        </article>
+        </article><hr>
         <article class="works-container">
           <h3 class="work">Senior Research</h3>
           <p>Google Trends and Machine Learning for Trading in Thailand Stock Market - Using google trends and linear regression to find the effect of google trends (Attention) on trading volume. Then, using random forest to trade SET Index and SET100 Index to find test the hypothesis of "Google Trends improve return".</p>
-          <img src="https://i.ibb.co/hfQfVYj/Seniorproject.jpg" alt="Seniorproject" border="0">
-          <a href="https://docs.google.com/presentation/d/1hbW-t3lN0uj-8yViuOYIQInMN1bTCAxE4YGSseXk0dk/edit?usp=sharing" target="_blank" class="see-project">See Presentation</a>
-          <a href="https://drive.google.com/file/d/1i8f1dEciMnY4Ipjt6JFKlpW59KYSMMmT/view?usp=sharing" target="_blank" class="see-project">See Full Paper</a>
+          <img src="https://i.ibb.co/hfQfVYj/Seniorproject.jpg" alt="Seniorproject" border="0"><br>
+          <p><a href="https://docs.google.com/presentation/d/1hbW-t3lN0uj-8yViuOYIQInMN1bTCAxE4YGSseXk0dk/edit?usp=sharing" target="_blank" class="see-project">See Presentation</a> | <a href="https://drive.google.com/file/d/1i8f1dEciMnY4Ipjt6JFKlpW59KYSMMmT/view?usp=sharing" target="_blank" class="see-project">See Full Paper</a></p>
         </article>
       </section>
     </main>
     <address>
       <div class="contacts" id="contacts">
-        <a class="link-icon" href="https://www.linkedin.com/in/wassakornsarakul/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a class="link-icon" href="https://github.com/W-Sarakul" target="_blank"><i class="fab fa-github"></i></a>
-        <a class="link-icon" href=""><i class="fas fa-phone-square"></i><span class="show-contact">09-7013-9620</span></a>
-        <a class="link-icon" href="#"><i class="fas fa-envelope"></i><span class="show-contact">w.m.sarakul@gmail.com</span></a>
+        <a class="link-icon" href="https://www.linkedin.com/in/wassakornsarakul/" target="_blank"><i class="fab fa-linkedin-in"></i><span class="show-contact"><p>Wassakorn Sarakul</p></span></a>
+        <a class="link-icon" href="https://github.com/W-Sarakul" target="_blank"><i class="fab fa-github"></i><span class="show-contact"><p>W-Sarakul</p></span></a>
+        <a class="link-icon" href="#"><i class="fas fa-phone-square"></i><span class="show-contact"><p>09-7013-9620</p></span></a>
+        <a class="link-icon" href="#"><i class="fas fa-envelope"></i><span class="show-contact"><p>w.m.sarakul@gmail.com</p></span></a>
       </div>
     </address>
   </body>
